@@ -1,7 +1,6 @@
 {
 	"name": "wms-frontend",
 	"private": true,
-	"main": "build/index.js",
 	"version": "0.0.1",
 	"type": "module",
 	"overrides": {
