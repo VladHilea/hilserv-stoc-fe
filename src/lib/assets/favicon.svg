@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="hilserv-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <!-- Stylized tech-tire outer ring -->
+  <circle cx="50" cy="50" r="42" stroke="url(#hilserv-grad)" stroke-width="7" stroke-dasharray="14 4" />
+  <!-- Inner tire boundary -->
+  <circle cx="50" cy="50" r="29" stroke="url(#hilserv-grad)" stroke-width="2.5" opacity="0.6" stroke-dasharray="2 2" />
+  <!-- Monogram H -->
+  <path d="M38 32V68M62 32V68M38 50H62" stroke="url(#hilserv-grad)" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

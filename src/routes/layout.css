@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@variant dark (&:where(.dark, .dark *));
+
+body {
+	margin: 0;
+	transition: background-color 0.25s, color 0.25s;
+
+	/* svelte-select CSS variables inherited globally */
+	--background: var(--color-slate-950);
+	--color: var(--color-slate-100);
+	--border: 1px solid var(--color-slate-800);
+	--border-hover: 1px solid var(--color-slate-700);
+	--border-focused: 1px solid #6366f1; /* indigo-500 */
+	--list-background: var(--color-slate-950);
+	--list-border: 1px solid var(--color-slate-800);
+	--item-color: var(--color-slate-100);
+	--item-hover-bg: var(--color-slate-900);
+	--item-hover-color: var(--color-slate-50);
+	--item-active-background: var(--color-slate-850);
+	--multi-item-bg: var(--color-slate-850);
+	--multi-item-color: var(--color-slate-100);
+	--placeholder-color: var(--color-slate-500);
+	--chevron-color: var(--color-slate-400);
+	--clear-icon-color: var(--color-slate-400);
+}
+
+/* Light mode overrides - Invert standard Tailwind v4 slate color variables */
+html.light, body.light {
+	/* Slate shades inverted to act as light mode colors */
+	--color-slate-50: #020617;
+	--color-slate-100: #0f172a;
+	--color-slate-200: #1e293b;
+	--color-slate-300: #334155;
+	--color-slate-400: #475569;
+	--color-slate-500: #64748b;
+	--color-slate-650: #94a3b8;
+	--color-slate-600: #94a3b8;
+	--color-slate-700: #cbd5e1;
+	--color-slate-800: #e2e8f0;
+	--color-slate-850: #e2e8f0;
+	--color-slate-900: #f1f5f9;
+	--color-slate-950: #f8fafc;
+
+	color-scheme: light;
+}
+
+/* Custom scrollbar behavior */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color-slate-800);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-slate-700);
+}
